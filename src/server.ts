@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware (промежуточные обработчики)
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5173', 'https://auth-frontend-teal-three.vercel.app/'],
     credentials: true
 }));
 app.use(express.json()); // Учим сервер понимать JSON в запросах
