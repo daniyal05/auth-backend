@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware (промежуточные обработчики)
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://твой-сайт.vercel.app'],
+    origin: ['http://localhost:5173'],
     credentials: true
 }));
 app.use(express.json()); // Учим сервер понимать JSON в запросах
